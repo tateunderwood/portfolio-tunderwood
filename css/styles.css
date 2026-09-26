@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@400;700&display=swap');
+
 /* ==========================
    1. RESET
    ========================== */
@@ -19,7 +21,7 @@ img {
    ========================== */
 :root {
     /* Color */
-    --color-bg: #fafafa;
+    --color-bg: #92400e;
     --color-surface: #ffffff;
     --color-text: #1f2937;
     --color-muted: #6b7280;
@@ -42,14 +44,25 @@ img {
     /* Layout */
     --page-width: 64rem;
     --reading-width: 70ch;
-    --font-stack: system-ui, 'Segoe UI', Tahoma, sans-serif;
+    --font-stack: 'Inter', system-ui, -apple-system, sans-serif;
+    --Font-serif: 'Lora', Georgia, serif;
     --color-surface-alt: #f1f5f9;
     --radius-md: 8px;
 
-:root {
-    /* ...existing tokens... */
     --color-border: #e5e7eb;
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --color-accent: #047857;
+
+}
+
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    line-height: var(--leading-heading);
+
+    nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.2s;
 }
 }
 /* ==========================
